@@ -32,7 +32,15 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@speechly/react-client": "^2.0.1",
+    "@speechly/react-ui": "^2.6.1",
+    "chart.js": "^3.7.1",
+    "react": "^16.12.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "^16.12.0",
+    "uui": "^1.0.7"
   }
 }
