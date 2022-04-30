@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, Typography, Grid, Divider } from '@material-ui/core'
 import useStyles from './styles'
+import Form from '../Form/Form'
 function Main() {
     const classes = useStyles();
 
@@ -12,7 +13,7 @@ function Main() {
                 <Typography variant='subtitle1' style={{ lineHeight: '1.5rem', marginTop: '20px' }}>Total balance $100</Typography>
                 try saying: Add income for $100 in Category for Monday...
                 <Divider></Divider>
-
+                <Form></Form>
             </CardContent>
 
             <CardContent className={classes.CardContent}>

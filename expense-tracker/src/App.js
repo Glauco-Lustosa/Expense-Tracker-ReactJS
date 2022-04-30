@@ -21,7 +21,7 @@ function App() {
           <Details title='Income'></Details>
         </Grid>
 
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={3}>
           <Main></Main>
         </Grid>
 
