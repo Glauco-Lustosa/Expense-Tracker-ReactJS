@@ -1,6 +1,7 @@
 import React from 'react'
 import { List as MUIList, ListItem, ListItemAvatar, Avatar, ListItemSecondaryAction, IconButton, Slide, ListItemText } from '@material-ui/core'
 import { Delete, MoneyOff } from '@material-ui/icons'
+
 import useStyles from './styles'
 function List() {
     const classes = useStyles()
@@ -11,6 +12,18 @@ function List() {
             category: 'Salary',
             amount: 50,
             date: 'Wed Dec 16'
+        },  {
+            id: 1,
+            type: 'Expense',
+            category: 'Pets',
+            amount: 150,
+            date: 'Wed Dec 17'
+        },  {
+            id: 1,
+            type: 'Income',
+            category: 'Business',
+            amount: 50,
+            date: 'Wed Dec 18'
         }
     ]
     return (
