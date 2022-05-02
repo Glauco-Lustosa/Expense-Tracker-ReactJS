@@ -13,7 +13,7 @@ function App() {
         container
         spacing={0}
         alignItems='center'
-        justify='center'
+        justifyContent='center'
         style={{ height: '100vh' }}
         classeName={classes.grid}
       >
