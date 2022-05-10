@@ -4,12 +4,14 @@ import { ExpenseTrackerContext } from '../../context/context';
 import useStyles from './styles'
 import { v4 as uuidv4 } from 'uuid'
 import { incomeCategories, expenseCategories } from '../../constants/categories'
+import formatDate from '../../utils/formatDate';
 const initialState = {
     amount: '',
     category: '',
     type: 'Income',
-    date: new Date()
+    date: formatDate(new Date())
 }
+
 function Form() {
     const classes = useStyles()
     const [formData, setFormData] = useState(initialState)
@@ -35,16 +37,9 @@ function Form() {
                     <InputLabel>
                         Type
                     </InputLabel>
-                    <Select value={formData.type}
-                        onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
-                        {selectedCategories.map((category) =>
-                            <MenuItem
-                                key={category.type}
-                                value={category.type}
-                            >
-                                {category.type}
-                            </MenuItem>
-                        )}
+                    <Select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
+                        <MenuItem value="Income">Income</MenuItem>
+                        <MenuItem value="Expense">Expense</MenuItem>
                     </Select>
                 </FormControl>
             </Grid>
@@ -63,7 +58,8 @@ function Form() {
                                 {category.type}
                             </MenuItem>
                         )}
-                        </Select>
+
+                    </Select>
                 </FormControl>
             </Grid>
             <Grid item xs={6}>

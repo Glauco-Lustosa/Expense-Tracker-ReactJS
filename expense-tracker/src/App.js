@@ -15,7 +15,7 @@ function App() {
         alignItems='center'
         justifyContent='center'
         style={{ height: '100vh' }}
-        classeName={classes.grid}
+        classename={classes.grid}
       >
         <Grid item xs={12} sm={4}>
           <Details title='Income'></Details>
